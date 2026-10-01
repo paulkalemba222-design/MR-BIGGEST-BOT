@@ -1,4 +1,4 @@
-# Cifer Pairing — déploiement
+# So Biggest — déploiement
 
 Le projet est prévu pour un site public avec Vercel pour le web/API et un worker Node.js permanent pour Baileys.
 

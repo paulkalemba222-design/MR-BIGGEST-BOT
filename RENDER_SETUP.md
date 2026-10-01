@@ -1,17 +1,20 @@
-# Déploiement Render – Cifer MD
+# 🦁 So Biggest — Worker Node
 
-Le dépôt est préparé pour un Render Web Service.
+Le worker WhatsApp doit être exécuté comme un service Node.js persistant.
 
-## Configuration Render
-- Build Command: `npm install`
-- Start Command: `npm start`
-- Runtime: Node
-- Node: 20+
+Commande de démarrage :
 
-Le script `npm start` lance `worker/index.js` depuis le dossier `worker`, afin que ses chemins relatifs (`commands/`, `sudo.json`, etc.) restent corrects.
+```bash
+cd worker && npm start
+```
 
-## Variables d’environnement
-Ajoute dans Render les variables nécessaires, notamment `TELEGRAM_BOT_TOKEN`.
-Ne mets jamais les secrets dans le ZIP ou dans GitHub.
+Variables d'environnement :
 
-Les fichiers de l’API Vercel (`api/`) et `vercel.json` sont conservés.
+```env
+PREFIXE=.
+DOSSIER_AUTH=auth_baileys
+NUMBER=243849360396
+BOT_NUMBER=243849360396
+USE_PAIRING_CODE=true
+RECONNECT_DELAY=5000
+```
